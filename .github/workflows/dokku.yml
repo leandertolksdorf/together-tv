@@ -2,7 +2,7 @@ name: dokku
 on: 
   push:
     branches:
-      - main
+      - stage
 jobs:
   deploy:
     name: Deploy
