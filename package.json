@@ -4,6 +4,11 @@
   "description": "Watch and listen to media simultaneously on different devices.",
   "homepage": "https://together-tv.farbig.media/",
   "scripts": {
+    "start": "npm run start-server",
+    "heroku-postbuild": "npm run build-server && npm run build-client",
+    "build-server": "cd server && npm install",
+    "start-server": "cd server && npm start",
+    "build-client": "cd client && npm install && npm run build",
     "dev": "concurrently -n '🤖 Express','⚛️  React  ' -c 'black.bgBlue','black.bgYellow' 'cd server && npm run dev' 'cd client && npm start'"
   },
   "dependencies": {
