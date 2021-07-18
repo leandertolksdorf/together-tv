@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently -n '🤖 Express','⚛️  React  ' -c 'black.bgBlue','black.bgYellow' 'nodemon index.js' 'cd client && npm start'",
-    "build": "cd ../client && npm install && npm run build",
-    "start": "nodemon index.js",
-    "heroku-postbuild": "npm run build",
+    "build-client": "cd ../client && npm install && npm run build",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "npm install && npm run build-client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

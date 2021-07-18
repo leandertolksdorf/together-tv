@@ -1,0 +1,12 @@
+{
+  "name": "together-tv",
+  "version": "1.0.0",
+  "description": "Watch and listen to media simultaneously on different devices.",
+  "homepage": "https://together-tv.farbig.media/",
+  "scripts": {
+    "dev": "concurrently -n '🤖 Express','⚛️  React  ' -c 'black.bgBlue','black.bgYellow' 'cd server && npm run dev' 'cd client && npm start'"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
