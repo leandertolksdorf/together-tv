@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  text-align: center;
+}
+
+.inner {
+  user-select: none;
+  text-decoration: none;
+  color: white;
+  background-color: #726DA844;
+
+  padding: .5rem;
+  display: inline-block;
+
+  cursor: pointer;
+
+  transition: .1s;
+}
+
+.inner:hover {
+  background-color: #726DA888;
+  transform: scale(1.1);
+}
+
+.inner:active {
+  transform: scale(.9);
+}

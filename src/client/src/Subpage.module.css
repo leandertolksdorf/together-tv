@@ -1,0 +1,23 @@
+.backlink {
+  user-select: none;
+  text-decoration: none;
+  color: white;
+  background-color: #726DA844;
+
+  padding: .5rem;
+  display: inline-block;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.backlink:hover {
+  background-color: #726DA888;
+  transform: scale(1.1);
+
+}
+
+.backlink:active {
+  transform: scale(.9);
+}

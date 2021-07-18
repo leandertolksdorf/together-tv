@@ -1,0 +1,164 @@
+.app {
+  width: 100%;
+  margin: auto;
+}
+
+#playerWrapper:fullscreen {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+#playerWrapper:fullscreen .player {
+  flex-grow: 1 !important;
+  padding-top: 0 !important;
+  overflow: hidden;
+}
+
+
+.form {
+  /* background: black; */
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  padding: .5rem;
+  display: flex;
+  flex-direction:column;
+
+}
+
+.form input {
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  background: transparent;
+}
+
+.form input::placeholder {
+  color: #ffffff88;
+}
+
+.form .sources {
+  font-size: 14px;
+  text-align: center;
+  color: #726DA8;
+}
+
+#playerWrapper {
+  border: 1px solid #726DA8;
+  /* border-radius: 15px; */
+  overflow: hidden;
+  /* box-shadow: 5px 5px 0px 0 #726DA888; */
+}
+
+.player {
+  background: black;
+  pointer-events: none;
+  position: relative;
+  /* max-width: 1200px; */
+  padding-top: 56.25%;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progressBarWrapper {
+  position: relative;
+  background-color:#2a293f;
+  transition: all .2s;
+  height: 12px;
+}
+
+.progressBarWrapper:hover ,
+.progressBarWrapper:hover .progressBar {
+  cursor: pointer;
+}
+
+.progressBar {
+  pointer-events: none;
+  background-color:#726DA8;
+  height: 100%;
+}
+
+.control .playControl {
+  position: relative;
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.playControl * {
+  cursor: pointer;
+  height: 30px;
+  transition: all .2s;
+  user-select: none;
+}
+
+.playButton:hover,
+.fullscreenButton:hover {
+  transform: scale(1.1);
+}
+
+.playButton:active,
+.fullscreenButton:active {
+  transform: scale(0.8);
+}
+
+.links {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.links a {
+  font-size: 18px;
+  color: #726DA8;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links a {
+  margin-right: .5rem;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+
+.hidden {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons > * {
+  margin-right: 20px;
+}
+
+.button > *:last-child {
+  margin-right: 0;
+}
